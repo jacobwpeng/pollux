@@ -215,7 +215,3 @@ func (mq *MessageQueue) readData(dataSize uint64,
 	copy(data[firstPart:], mq.mem[headerSize:])
 	return data, headerSize + dataSize - firstPart
 }
-
-func main() {
-	fmt.Println("vim-go")
-}
